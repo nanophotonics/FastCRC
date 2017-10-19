@@ -1,4 +1,4 @@
-/* FastCRC library code is placed under the MIT license
+﻿/* FastCRC library code is placed under the MIT license
  * Copyright (c) 2014,2015 Frank Bösing
  *
  * Permission is hereby granted, free of charge, to any person obtaining
@@ -33,6 +33,8 @@
 
 #ifdef __AVR__
 #include <avr/pgmspace.h>
+#elif defined(__arm__)
+#include <pgmspace_Due.h>
 #else
 #include <pgmspace.h>	
 #endif
